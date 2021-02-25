@@ -9,7 +9,6 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 peewee==3.2.2
-psycopg2==2.8.6
 psycopg2-binary==2.8.4
 Werkzeug==1.0.1
 zipp==3.4.0

@@ -1,0 +1,11 @@
+ 1809  heroku create
+ 1810  heroku config:set SECRET_KEY=KjJPe35tQKY2YLRzm7vhm3aJdqqh8YHR
+ 1811  pip install gunicorn psycopg2
+ 1812  pip install gunicorn psycopg2-binary
+ 1813  pip freeze > requirements.txt
+ 1814  echo "web: gunicorn main:app" > Procfile
+ 1815  heroku addons:create heroku-postgresql:hobby-dev
+ 1816  heroku config
+ 1820  git push heroku master
+ 1843  heroku run python setup.py
+ 1844  heroku open
