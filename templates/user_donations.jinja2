@@ -1,0 +1,12 @@
+{% extends 'base.jinja2' %}
+
+{% block subtitle %}Donations from     {{ user_donations[0].donor.name }} {% endblock subtitle %}
+
+{% block content %}
+
+<ul>
+    {% for donation in user_donations %}
+        <li>{{ donation.value }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}

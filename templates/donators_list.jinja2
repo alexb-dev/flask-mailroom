@@ -1,0 +1,11 @@
+{% extends 'base.jinja2' %}
+
+{% block subtitle %}Donators List{% endblock subtitle %}
+
+{% block content %}
+<ul>
+    {% for user in users %}
+        <li><a id="donations" href="{{ url_for('donators')}}{{ user.name }}" > {{ user.name }} </a> <b> </b></li>
+    {% endfor %}
+</ul>
+{% endblock content %}
